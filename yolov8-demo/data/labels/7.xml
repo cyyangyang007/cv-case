@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>7.jpg</filename>
+	<path>E:\workspace\yolov8-test\data\images\7.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1100</width>
+		<height>731</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>347</xmin>
+			<ymin>2</ymin>
+			<xmax>862</xmax>
+			<ymax>537</ymax>
+		</bndbox>
+	</object>
+</annotation>
