@@ -1,9 +1,0 @@
-train: E:/workspace/yolov8-test/data/train/images
-val: E:/workspace/yolov8-test/data/val/images
-test: E:/workspace/yolov8-test/data/test/images
-
-# number of classes
-nc: 1
-
-# class names
-names: ['cat']
