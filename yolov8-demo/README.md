@@ -28,7 +28,7 @@
 
 1. 处理数据集： 
     - 修改data/data.yaml：path、nc、names
-    - 修改模型输出类别的个数，打开cfg/yolov5.yaml，修改nc
+    - 修改模型输出类别的个数，打开cfg/yolov8n.yaml，修改nc
     - 收集数据，保存在data/images/
         + 统一文件后缀如jpg、png
     - 标注数据，保存在data/labels/
