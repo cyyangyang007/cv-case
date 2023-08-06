@@ -1,0 +1,17 @@
+# Usage: pip install -r requirements.txt
+# 实测环境：python3.8
+# CUDA Version：12.1(向下兼容pytorch+cuda版本)
+# 本地虚拟环境：E:python310/myenv/Scripts
+
+ultralytics==8.0.143
+# numpy离线下载：https://pypi.tuna.tsinghua.edu.cn/simple/numpy/
+numpy==1.24.2 
+matplotlib==3.7.1
+opencv-python==4.7.0.72
+PyYAML==6.0
+scipy==1.10.1
+tqdm==4.65.0
+protobuf==3.20.3
+# tensorboard==2.13.0
+# pandas==1.5.3
+seaborn==0.12.2
