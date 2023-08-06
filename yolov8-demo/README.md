@@ -36,5 +36,5 @@
             * 示例仅放了7张图，拆分时可能产生空集
         + 修改模型输出类别的个数，打开cfg/yolov5.yaml，修改nc
 
-2. 使用模型：use.py
+2. 使用模型：use.py  
 train、val、test、export语句都在其中，更多用例参考对应的py文件
