@@ -1,11 +1,13 @@
-# yolov5训练自己的数据集-python版（win10本地速通教程）
+# yolov8训练自己的数据集（win10本地速通教程）
 >本仓库仅抽取了训练所需的基础文件，旨在快速开启第一步
->项目在python3.6环境下实测通过，各依赖对应版本见requirements.txt
->官方github：git clone https://github.com/ultralytics/yolov5
+>项目在python3.10环境下实测通过，各依赖对应版本见requirements.txt
+>官方github：git clone https://github.com/ultralytics/ultralytics
 
 ## 流程
 0. 配置环境  
     - Clone本项目
+      + 注意不要pip安装ultralytics(便于修改源码，更改模型结构)
+      + 该项目在源码基础上做了修改，细节见MODIFY.md
     - 配置GPU训练环境
         + 检查显卡驱动（版本太旧下载[更新](https://www.nvidia.cn/Download/index.aspx?lang=cn)）：`nvidia-smi`  
         + 安装对应版本CUDA[下载exe](https://developer.nvidia.com/cuda-toolkit-archive)  
@@ -24,17 +26,17 @@
             * `pip install -r requirements.txt`  
         + 检查已安装的库 `pip freeze`
 
-1. 处理数据集：`cd data`  
-    - 修改data.yaml：path、nc、names
-    - 收集数据，保存在images/
-        + 统一文件后缀如jpg，png
-    - 标注数据，保存在labels/
-    - 处理数据（注意修改参数）
+1. 处理数据集： 
+    - 修改data/data.yaml：path、nc、names
+    - 修改模型输出类别的个数，打开cfg/yolov5.yaml，修改nc
+    - 收集数据，保存在data/images/
+        + 统一文件后缀如jpg、png
+    - 标注数据，保存在data/labels/
+    - 运行处理脚本（注意修改参数）
         + 确认数据集的classes：`python find_classes.py`  
         + VOC转YOLO格式(新增txt目录)：`python xml2txt.py`  
         + 拆分数据集（train、val、test）：`python split_dateset.py`  
             * 示例仅放了7张图，拆分时可能产生空集
-        + 修改模型输出类别的个数，打开cfg/yolov5.yaml，修改nc
 
-2. 使用模型：use.py  
-train、val、test、export语句都在其中，更多用例参考对应的py文件
+2. 使用模型：执行python脚本
+use.py包含了train、val、test、export的使用实例，更多用例参考对应的py文件
