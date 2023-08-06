@@ -23,8 +23,6 @@
             * `cd <requirements.txt所在目录>`  
             * `pip install -r requirements.txt`  
         + 检查已安装的库 `pip freeze`
-<br>
-<br>
 
 1. 处理数据集：`cd data`  
     - 修改data.yaml：path、nc、names
@@ -38,5 +36,5 @@
             * 示例仅放了7张图，拆分时可能产生空集
         + 修改模型输出类别的个数，打开cfg/yolov5.yaml，修改nc
 
-2. 训练模型：train.py
-训练、验证、测试模型的语句都在其中，更多用例参考对应的py文件
+2. 使用模型：use.py
+train、val、test、export语句都在其中，更多用例参考对应的py文件
