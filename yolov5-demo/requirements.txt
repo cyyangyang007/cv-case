@@ -1,0 +1,49 @@
+# Usage: pip install -r requirements.txt
+# 实测环境：python3.10
+# CUDA Version：12.1(向下兼容pytorch+cuda版本)
+# 本地虚拟环境：E:python310/myenv/Scripts
+
+ultralytics==8.147
+# numpy离线下载：https://pypi.tuna.tsinghua.edu.cn/simple/numpy/
+numpy==1.24.2 
+matplotlib==3.7.1
+opencv-python==4.7.0.72
+PyYAML==6.0.1
+scipy==1.10.1
+tqdm==4.65.0
+protobuf==3.20.3
+GitPython==3.1.32
+
+# Pytorch离线安装包下载地址：https://download.pytorch.org/whl/torch_stable.html
+# torch>=1.7.0,!=1.12.0 
+# torchvision>=0.8.1,!=0.13.0
+
+# Logging -------------------------------------
+tensorboard==2.13.0
+# wandb
+# netron
+
+# Plotting ------------------------------------
+pandas==1.5.3
+seaborn==0.12.2
+
+# Export --------------------------------------
+# coremltools==6.3.0  # CoreML export
+# onnx==1.12.0  # ONNX export
+# nvidia-pyindex==1.0.9
+# onnx-graphsurgeon==0.3.27
+# onnx-simplifier>=0.3.6  # ONNX simplifier
+# onnxsim==0.4.33
+# onnxruntime-gpu==1.10.0
+# scikit-learn==0.19.2  # CoreML quantization
+# tensorflow>=2.4.1  # TFLite export
+# tensorflowjs>=3.9.0  # TF.js export
+# openvino-dev  # OpenVINO export
+
+# Extras --------------------------------------
+# ipython  # interactive notebook
+# psutil  # system utilization
+# thop  # FLOPs computation
+# albumentations>=1.0.3
+# pycocotools>=2.0  # COCO mAP
+# roboflow
