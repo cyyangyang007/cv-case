@@ -1,0 +1,10 @@
+# custom dataset
+train: data/train/images
+val: data/val/images
+test: data/test/images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['cat']
